@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
+      rel="stylesheet" />
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="./seblak.css" />
+
+    <!-- aLpine js  -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .menu {
+        padding: 20px;
+      }
+      .menu h2 {
+        text-align: center;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 10px;
+      }
+      .menu-cart {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        width: 30rem;
+        padding: 10px;
+        text-align: center;
+      }
+      .menu-cart-img {
+        width: 100%;
+        height: 30rem;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+      .menu-cart-tittle {
+        margin: 10px 0;
+        font-size: 2rem;
+      }
+      .menu-cart-price {
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar start -->
+
+    <nav class="navbar" x-data>
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about"> Tentang</a>
+      </div>
+      <a href="#" class="navbar-logo">Seblak Prasmanan MAMAH MIKA</a>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- hero Section start -->
+    <section class="hero-start" id="home">
+      <main class="content">
+        <h1>Seblak Prasmanan <span>MAMAH MIKA</span></h1>
+        <p>
+          Yuk cobain sensasi makan seblak yang beda dari biasanya di Seblak
+          Prasmanan MAMAH MIKA! Di sini kamu bebas pilih sendiri topping
+          favoritmu — mulai dari ceker, kikil, makaroni, batagor, hingga aneka
+          kerupuk — lalu tentukan sendiri level pedasnya sesuai selera. Dengan
+          konsep prasmanan yang seru dan harga yang ramah di kantong, kamu bisa
+          menikmati seblak hangat, pedas, dan mantap dalam suasana yang santai.
+          Cocok buat nongkrong bareng teman atau sekadar memanjakan lidah di
+          tengah hari yang sibuk. Jadi, tunggu apa lagi? Rakit seblakmu sendiri
+          dan rasakan nikmatnya kebebasan dalam satu mangkuk!
+        </p>
+        <a
+          href="#menu"
+          class="call-to-action"
+          target="_blank"
+          href="https://wa.me/6285715470650?text=Halo%20saya%20ingin%20memesan%20Seblak%20prasmanan"
+          >Pesan Sekarang Via WatsApp</a
+        >
+      </main>
+    </section>
+    <!-- hero Section end -->
+
+    <!-- menu section star -->
+    <section id="menu" class="menu">
+      <h2>Menu Kita</h2>
+      <div class="row">
+        <!-- Product 1 -->
+        <div class="menu-cart">
+          <img
+            src="./imghtml/pisang.jpeg"
+            alt="Cookies Nanas"
+            class="menu-cart-img" />
+          <h3 class="menu-cart-tittle">pisang coklat</h3>
+          <p class="menu-cart-price">IDR 1.000 - 20.000</p>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="menu-cart">
+          <img
+            src="./imghtml/bangku.jpeg"
+            alt="Ekado Ayam"
+            class="menu-cart-img" />
+          <h3 class="menu-cart-tittle">Makan Sambil Nongkrong</h3>
+          <p class="menu-cart-price">Nomor 1 - 6</p>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="menu-cart">
+          <img
+            src="./imghtml/seblak.jpeg"
+            alt="Almond Panggang"
+            class="menu-cart-img" />
+          <h3 class="menu-cart-tittle">Seblak bebas Toping</h3>
+          <p class="menu-cart-price">IDR 1.000 - 50.000</p>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="menu-cart">
+          <img
+            src="./imghtml/seblak2.jpeg"
+            alt="Pastel Udang"
+            class="menu-cart-img" />
+          <h3 class="menu-cart-tittle">Seblak bebas pilih</h3>
+          <p class="menu-cart-price">IDR 1.000 - 50.000</p>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="menu-cart">
+          <img
+            src="./imghtml/prasmanan.jpeg"
+            alt="Samosa Ayam"
+            class="menu-cart-img" />
+          <h3 class="menu-cart-tittle">Banyak Menu & toping</h3>
+          <p class="menu-cart-price">IDR 1.000 - 50.000</p>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="menu-cart">
+          <img
+            src="./imghtml/menu.jpeg"
+            alt="Spring Roll Udang"
+            class="menu-cart-img" />
+          <h3 class="menu-cart-tittle">Bebas Reques Toping</h3>
+          <p class="menu-cart-price">IDR 1.000 - 50.000</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- modal box start =================================================================== -->
+
+    <!-- modal box end =================================================================== -->
+
+    <section id="about" class="about">
+      <h2>Tentang Kami</h2>
+
+      <div class="content">
+        <h3>yuk fahami seblak mu</h3>
+        <p>
+          “Seblak adalah tentang rasa, dan setiap orang berhak menentukan
+          rasanya sendiri.” Seblak Prasmanan lahir dari semangat kebebasan
+          memilih dan kenikmatan personal. Di dunia yang serba cepat dan penuh
+          pilihan, kami hadir memberikan pengalaman makan yang tidak hanya
+          mengenyangkan, tapi juga menyenangkan. Di sini, pelanggan bukan
+          sekadar penikmat, tapi juga peracik rasa—memilih sendiri topping
+          favorit dan menentukan seberapa pedas tantangan yang ingin mereka
+          hadapi. Dengan mengusung konsep prasmanan modern yang hangat dan
+          bersahabat, Seblak Prasmanan membawa cita rasa khas Indonesia ke dalam
+          format yang lebih interaktif dan seru. Kami percaya bahwa makanan
+          pedas bukan hanya soal rasa, tapi juga soal pengalaman, ekspresi diri,
+          dan kebersamaan. Karena itu, setiap mangkuk seblak yang diracik
+          sendiri oleh pelanggan adalah bentuk kecil dari kebebasan—dalam
+          memilih, mencicipi, dan menikmati hidup.
+        </p>
+      </div>
+      <div class="row">
+        <div class="about-img">
+          <img src="./imghtml/profile.jpeg" alt="Tentang Kami" />
+        </div>
+      </div>
+    </section>
+
+    <!-- footer start -->
+    <footer>
+      <div class="content">
+        <div class="social">
+          <a class="a" href=""><i data-feather="phone"></i></a>
+          <a class="a" href=""><i data-feather="message-circle"></i></a>
+          <a class="a" href=""><i data-feather="instagram"></i></a>
+          <a class="a" href=""><i data-feather="facebook"></i></a>
+          <a class="a" href=""><i data-feather="mail"></i></a>
+        </div>
+        <div class="credit">
+          <p>Created by <a href="">Kelompok Terakhir</a> | &copy; 2025.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer start -->
+
+    <!-- father icon -->
+
+    <script>
+      feather.replace();
+    </script>
+
+    <script src="./seblak.js"></script>
+    <script src="src/apps.js" async></script>
+  </body>
+</html>
